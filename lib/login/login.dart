@@ -1,10 +1,8 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously,, unnecessary_null_comparison
 // unnecessary_null_comparison
 
-import 'package:doctors_appointment/BottomNavBar/bottomNav.dart';
-import 'package:doctors_appointment/SignUp/signUp.dart';
-import 'package:doctors_appointment/home/homeScreen.dart';
-// import 'package:firebase_core/firebase_core.dart';
+import 'package:IcarePro/BottomNavBar/bottomNav.dart';
+import 'package:IcarePro/SignUp/signUp.dart';
 import 'package:flutter/material.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

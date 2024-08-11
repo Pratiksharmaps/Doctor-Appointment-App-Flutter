@@ -3,10 +3,8 @@
 import 'dart:async';
 import 'dart:developer';
 
+import 'package:IcarePro/Api/api.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctors_appointment/Api/api.dart';
-import 'package:doctors_appointment/Models/testModel.dart';
-import 'package:doctors_appointment/Online%20Medicines/onlineMedicines.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

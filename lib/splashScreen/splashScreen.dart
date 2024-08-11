@@ -1,9 +1,7 @@
-import 'dart:async';
-
-import 'package:doctors_appointment/BottomNavBar/bottomNav.dart';
-import 'package:doctors_appointment/home/homeScreen.dart';
-import 'package:doctors_appointment/login/login.dart';
+import 'package:IcarePro/BottomNavBar/bottomNav.dart';
+import 'package:IcarePro/login/login.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Splashscreen extends StatefulWidget {
   bool loginState;
@@ -16,21 +14,65 @@ class Splashscreen extends StatefulWidget {
 class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
-    Timer(
-        Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) =>
-                  (widget.loginState == true) ? const BottomNav() : LoginPage(),
-            )));
-    return Image.asset(
-      'assets/images/splashImage1.jpg',
-      fit: BoxFit.cover,
-      height: double.infinity,
-      width: double.infinity,
-      alignment: Alignment.center,
-      
+    return Scaffold(
+      backgroundColor: Colors.blueAccent,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: AnimatedTextKit(
+              onFinished: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => (widget.loginState == true)
+                          ? const BottomNav()
+                          : LoginPage(),
+                    ));
+              },
+              animatedTexts: [
+                TypewriterAnimatedText(
+                  'Hi...',
+                  cursor: ".",
+                  textAlign: TextAlign.center,
+                  textStyle: const TextStyle(
+                      fontSize: 34.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                  speed: const Duration(milliseconds: 110),
+                ),
+                TypewriterAnimatedText('Welcome to Doctor Appointment System',
+                    textAlign: TextAlign.center,
+                    curve: Curves.ease,
+                    textStyle: const TextStyle(
+                      fontSize: 34.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    speed: const Duration(milliseconds: 120),
+                    cursor: "!"),
+                TypewriterAnimatedText(
+                  'Doctor Appointment System!',
+                  textAlign: TextAlign.center,
+                  curve: Curves.ease,
+                  textStyle: const TextStyle(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                  speed: const Duration(milliseconds: 120),
+                  cursor: "!",
+                ),
+              ],
+              isRepeatingAnimation: false,
+              displayFullTextOnTap: true,
+              stopPauseOnTap: true,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

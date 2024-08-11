@@ -1,22 +1,18 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'package:doctors_appointment/Appointment/appointments.dart';
-import 'package:doctors_appointment/BottomNavBar/bottomNav.dart';
-import 'package:doctors_appointment/Cart/cart.dart';
-import 'package:doctors_appointment/Online%20Medicines/onlineMedicines.dart';
-import 'package:doctors_appointment/ProfilePage/profilePage.dart';
-import 'package:doctors_appointment/SignUp/signUp.dart';
-import 'package:doctors_appointment/Specialist%20Page/specialistScreen.dart';
-import 'package:doctors_appointment/Test/labTest.dart';
-import 'package:doctors_appointment/Test/testScreen.dart';
-import 'package:doctors_appointment/Top%20Categories/topCategories.dart';
-import 'package:doctors_appointment/consult/quickConsult.dart';
-import 'package:doctors_appointment/consult/quickConsultParticular.dart';
-import 'package:doctors_appointment/example/example.dart';
-import 'package:doctors_appointment/login/login.dart';
-import 'package:doctors_appointment/home/homeScreen.dart';
-import 'package:doctors_appointment/schedule/schedulePage.dart';
-import 'package:doctors_appointment/splashScreen/splashScreen.dart';
+import 'package:IcarePro/Appointment/appointments.dart';
+import 'package:IcarePro/Cart/cart.dart';
+import 'package:IcarePro/Online%20Medicines/onlineMedicines.dart';
+import 'package:IcarePro/ProfilePage/profilePage.dart';
+import 'package:IcarePro/SignUp/signUp.dart';
+import 'package:IcarePro/Specialist%20Page/specialistScreen.dart';
+import 'package:IcarePro/Test/labTest.dart';
+import 'package:IcarePro/Test/testScreen.dart';
+import 'package:IcarePro/Top%20Categories/topCategories.dart';
+import 'package:IcarePro/consult/quickConsult.dart';
+import 'package:IcarePro/consult/quickConsultParticular.dart';
+import 'package:IcarePro/home/homeScreen.dart';
+import 'package:IcarePro/login/login.dart';
+import 'package:IcarePro/schedule/schedulePage.dart';
+import 'package:IcarePro/splashScreen/splashScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -83,9 +79,9 @@ class _MyAppState extends State<MyApp> {
         '/CartScreen': (context) => MyCartScreen(),
         '/TopCategories': (context) => Topcategories(),
         '/specialisityScreen': (context) => Specialistscreen(),
-        '/cartScreen' : (context) => MyCartScreen(),
-        '/ProfilePage' : (context) => Profilepage(),
-        '/BottomNav' : (context) => BottomAppBar(),
+        '/cartScreen': (context) => MyCartScreen(),
+        '/ProfilePage': (context) => Profilepage(),
+        '/BottomNav': (context) => BottomAppBar(),
       },
     );
   }

@@ -2,12 +2,11 @@
 
 import 'dart:developer';
 
+import 'package:IcarePro/ProfilePage/profilePage.dart';
+import 'package:IcarePro/Test/labTest.dart';
+import 'package:IcarePro/consult/quickConsult.dart';
+import 'package:IcarePro/home/homeScreen.dart';
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
-import 'package:doctors_appointment/Online%20Medicines/onlineMedicines.dart';
-import 'package:doctors_appointment/ProfilePage/profilePage.dart';
-import 'package:doctors_appointment/Test/labTest.dart';
-import 'package:doctors_appointment/consult/quickConsult.dart';
-import 'package:doctors_appointment/home/homeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

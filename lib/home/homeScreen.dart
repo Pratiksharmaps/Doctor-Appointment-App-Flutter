@@ -2,17 +2,9 @@
 
 import 'dart:async';
 import 'dart:developer';
-import 'package:doctors_appointment/Api/api.dart';
+import 'package:IcarePro/Api/api.dart';
+import 'package:IcarePro/Models/userModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctors_appointment/Appointment/appointments.dart';
-import 'package:doctors_appointment/Cart/cart.dart';
-import 'package:doctors_appointment/Models/userModel.dart';
-import 'package:doctors_appointment/Online%20Medicines/onlineMedicines.dart';
-import 'package:doctors_appointment/Test/labTest.dart';
-import 'package:doctors_appointment/consult/quickConsult.dart';
-import 'package:doctors_appointment/consult/quickConsultParticular.dart';
-import 'package:doctors_appointment/example/example.dart';
-import 'package:doctors_appointment/login/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';

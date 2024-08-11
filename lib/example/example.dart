@@ -5,8 +5,6 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctors_appointment/Api/api.dart';
-import 'package:doctors_appointment/Models/userModel.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart';

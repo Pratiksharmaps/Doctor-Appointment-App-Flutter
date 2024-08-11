@@ -3,7 +3,6 @@
 import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctors_appointment/Models/testModel.dart';
 import 'package:flutter/material.dart';
 
 class MyTestScreen extends StatefulWidget {

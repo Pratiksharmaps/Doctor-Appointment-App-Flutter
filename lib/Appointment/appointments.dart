@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:IcarePro/Models/userModel.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/date_symbol_data_file.dart';
 
 import 'dart:async';
 import 'dart:developer';
-
-import 'package:doctors_appointment/Models/userModel.dart';
-import 'package:doctors_appointment/schedule/schedulePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

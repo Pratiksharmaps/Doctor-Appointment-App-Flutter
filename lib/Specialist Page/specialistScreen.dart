@@ -1,8 +1,6 @@
+import 'package:IcarePro/Api/api.dart';
+import 'package:IcarePro/Models/userModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctors_appointment/Api/api.dart';
-import 'package:doctors_appointment/Models/userModel.dart';
-import 'package:doctors_appointment/consult/quickConsult.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

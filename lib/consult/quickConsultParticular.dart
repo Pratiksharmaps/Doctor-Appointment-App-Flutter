@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_import
 
-import 'package:doctors_appointment/Models/userModel.dart';
+import 'package:IcarePro/Models/userModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

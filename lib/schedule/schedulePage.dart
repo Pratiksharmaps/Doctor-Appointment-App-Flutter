@@ -1,9 +1,8 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures
 
 import 'dart:developer';
-
-import 'package:doctors_appointment/Api/api.dart';
-import 'package:doctors_appointment/Models/userModel.dart';
+import 'package:IcarePro/Api/api.dart';
+import 'package:IcarePro/Models/userModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
