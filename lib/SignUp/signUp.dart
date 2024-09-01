@@ -23,19 +23,18 @@ class SignUpApp extends StatelessWidget {
 class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.blueGrey[900],
-        appBar: AppBar(
-          title: Text(
-            'Sign Up',
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.blueGrey[900],
-          centerTitle: true,
+    return Scaffold(
+      backgroundColor: Colors.blue[300],
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Text(
+          'Sign Up',
+          style: TextStyle(color: Colors.black),
         ),
-        body: SingleChildScrollView(child: SignUpForm()),
+        backgroundColor: Colors.white,
+        // centerTitle: true,
       ),
+      body: SingleChildScrollView(child: SignUpForm()),
     );
   }
 }
@@ -76,7 +75,7 @@ class _SignUpFormState extends State<StatefulWidget> {
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent,
+                  color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -119,11 +118,13 @@ class _SignUpFormState extends State<StatefulWidget> {
               SizedBox(height: 20.0),
               TextFormField(
                 controller: _passwordController,
+                
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   labelText: 'Password',
                   labelStyle: TextStyle(color: Colors.white),
                   prefixIcon: Icon(Icons.lock, color: Colors.white),
+                  
                   suffixIcon: GestureDetector(
                     child: Icon(
                       state == true ? Icons.visibility : Icons.visibility_off,
@@ -140,7 +141,7 @@ class _SignUpFormState extends State<StatefulWidget> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-                obscureText: state,
+                obscureText: !state,
               ),
               SizedBox(height: 40.0),
               ElevatedButton(

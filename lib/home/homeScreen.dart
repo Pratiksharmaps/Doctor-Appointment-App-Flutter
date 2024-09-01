@@ -39,7 +39,7 @@ class _HomescreenState extends State<Homescreen> {
     return email;
   }
 
- Future<UserModel> getUser(String email) async {
+  Future<UserModel> getUser(String email) async {
     final snapshot = await _firebaseFirestore
         .collection('user')
         .where('email', isEqualTo: email)
@@ -115,22 +115,22 @@ class _HomescreenState extends State<Homescreen> {
                                   ),
                                 ],
                               ),
-                              Spacer(),
-                              IconButton(
-                                color: Colors.black87,
-                                onPressed: () {},
-                                icon: Icon(CupertinoIcons.chat_bubble),
-                                // visualDensity: VisualDensity(horizontal: 10),
-                              ),
-                              // SizedBox(width: 5),
-                              IconButton(
-                                  color: Colors.black87,
-                                  onPressed: () {},
-                                  icon: Icon(CupertinoIcons.heart)),
-                              IconButton(
-                                  color: Colors.black87,
-                                  onPressed: () {},
-                                  icon: Icon(Icons.notification_add_outlined)),
+                              // Spacer(),
+                              // IconButton(
+                              //   color: Colors.black87,
+                              //   onPressed: () {},
+                              //   icon: Icon(CupertinoIcons.chat_bubble),
+                              //   // visualDensity: VisualDensity(horizontal: 10),
+                              // ),
+                              // // SizedBox(width: 5),
+                              // IconButton(
+                              //     color: Colors.black87,
+                              //     onPressed: () {},
+                              //     icon: Icon(CupertinoIcons.heart)),
+                              // IconButton(
+                              //     color: Colors.black87,
+                              //     onPressed: () {},
+                              //     icon: Icon(Icons.notification_add_outlined)),
                             ],
                           );
                         }),
@@ -398,7 +398,7 @@ class _HomescreenState extends State<Homescreen> {
                               onTap: () => Navigator.pushNamed(
                                   context, '/specialisityScreen',
                                   arguments:
-                                      SpecialDoctorModel(type: 'general')),
+                                      SpecialDoctorModel(type: 'cardio')),
                               child: SpecialityIcon(
                                 iconImage:
                                     'https://cdn-icons-png.flaticon.com/512/8356/8356033.png',
@@ -412,7 +412,7 @@ class _HomescreenState extends State<Homescreen> {
                             child: SpecialityIcon(
                               iconImage:
                                   'https://cdn-icons-png.flaticon.com/512/1453/1453589.png',
-                              iconName: 'Dentist',
+                              iconName: 'GastroLogist',
                             ),
                           ),
                           SizedBox(width: 10.0),
@@ -481,13 +481,13 @@ class _HomescreenState extends State<Homescreen> {
                               ],
                             ),
                             Spacer(),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: IconButton(
-                                onPressed: () {},
-                                icon: Icon(CupertinoIcons.heart),
-                              ),
-                            )
+                            // CircleAvatar(
+                            //   backgroundColor: Colors.white,
+                            //   child: IconButton(
+                            //     onPressed: () {},
+                            //     icon: Icon(CupertinoIcons.heart),
+                            //   ),
+                            // )
                           ],
                         ),
                       ),
@@ -539,13 +539,13 @@ class _HomescreenState extends State<Homescreen> {
                               ],
                             ),
                             Spacer(),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: IconButton(
-                                onPressed: () {},
-                                icon: Icon(CupertinoIcons.heart),
-                              ),
-                            )
+                            // CircleAvatar(
+                            //   backgroundColor: Colors.white,
+                            //   child: IconButton(
+                            //     onPressed: () {},
+                            //     icon: Icon(CupertinoIcons.heart),
+                            //   ),
+                            // )
                           ],
                         ),
                       ),
@@ -559,7 +559,7 @@ class _HomescreenState extends State<Homescreen> {
                               img:
                                   'https://st2.depositphotos.com/2931363/6569/i/450/depositphotos_65699901-stock-photo-black-man-keeping-arms-crossed.jpg',
                               name: 'Raman',
-                              type: 'General',
+                              type: 'Neuro',
                               workAt: 'AIIMS')),
                       child: Container(
                         padding: EdgeInsets.all(8.0),
@@ -597,13 +597,13 @@ class _HomescreenState extends State<Homescreen> {
                               ],
                             ),
                             Spacer(),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: IconButton(
-                                onPressed: () {},
-                                icon: Icon(CupertinoIcons.heart),
-                              ),
-                            )
+                            // CircleAvatar(
+                            //   backgroundColor: Colors.white,
+                            //   child: IconButton(
+                            //     onPressed: () {},
+                            //     icon: Icon(CupertinoIcons.heart),
+                            //   ),
+                            // )
                           ],
                         ),
                       ),
@@ -655,13 +655,13 @@ class _HomescreenState extends State<Homescreen> {
                               ],
                             ),
                             Spacer(),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: IconButton(
-                                onPressed: () {},
-                                icon: Icon(CupertinoIcons.heart),
-                              ),
-                            )
+                            // CircleAvatar(
+                            //   backgroundColor: Colors.white,
+                            //   child: IconButton(
+                            //     onPressed: () {},
+                            //     icon: Icon(CupertinoIcons.heart),
+                            //   ),
+                            // )
                           ],
                         ),
                       ),

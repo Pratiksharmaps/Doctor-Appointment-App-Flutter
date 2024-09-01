@@ -69,7 +69,7 @@ class _ProfilepageState extends State<Profilepage> {
                                                 height: double.infinity,
                                                 width: double.infinity,
                                                 fit: BoxFit.cover,
-                                                snapshot.data!['img'] ,
+                                                snapshot.data!['img'],
                                               ),
                                             ),
                                           ),
@@ -150,12 +150,13 @@ class _ProfilepageState extends State<Profilepage> {
                                           Divider(),
                                           GestureDetector(
                                             onTap: () {
+                                              Navigator.pop(context);
                                               showDialog(
-                                                  context: context,
+                                                  context:  Navigator.of(context, rootNavigator: true).context,
                                                   builder: (context) {
                                                     return AlertDialog(
                                                       backgroundColor:
-                                                          Colors.transparent,
+                                                          Colors.white,
                                                       // title:
                                                       // Text('Change name'),
                                                       content: SizedBox(
@@ -225,10 +226,12 @@ class _ProfilepageState extends State<Profilepage> {
                                                                               .text
                                                                     });
                                                                   }
+                                                                  Navigator.pop(
+                                                                      context);
 
-                                                                  Navigator.pushNamed(
-                                                                      context,
-                                                                      '/BottomNav');
+                                                                  // Navigator.pushNamed(
+                                                                  //     context,
+                                                                  //     '/BottomNav');
                                                                 },
                                                                 child: Text(
                                                                   'Change',

@@ -1,12 +1,9 @@
-// ignore_for_file: prefer_const_constructors, use_build_context_synchronously,, unnecessary_null_comparison
-// unnecessary_null_comparison
-
 import 'package:IcarePro/BottomNavBar/bottomNav.dart';
 import 'package:IcarePro/SignUp/signUp.dart';
 import 'package:flutter/material.dart';
-// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -41,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
     } catch (error) {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: false,
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('AlertDialog Title'),
@@ -50,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             actions: <Widget>[
               TextButton(
-                child: const Text('Approve'),
+                child: const Text('ok'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -61,14 +58,15 @@ class _LoginPageState extends State<LoginPage> {
       );
     }
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('User Login'),
+        automaticallyImplyLeading: false,
       ),
-      backgroundColor: Colors.blueGrey[900],
+      backgroundColor: Colors.blue[300],
       body: Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 30),
@@ -137,7 +135,7 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-                obscureText: state,
+                obscureText: !state,
               ),
               SizedBox(height: 30),
               ElevatedButton(

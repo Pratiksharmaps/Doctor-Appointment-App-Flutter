@@ -15,7 +15,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor:Colors.blue[300],
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,7 +43,7 @@ class _SplashscreenState extends State<Splashscreen> {
                       color: Colors.white),
                   speed: const Duration(milliseconds: 110),
                 ),
-                TypewriterAnimatedText('Welcome to Doctor Appointment System',
+                TypewriterAnimatedText('Welcome to IcarePro',
                     textAlign: TextAlign.center,
                     curve: Curves.ease,
                     textStyle: const TextStyle(
@@ -54,7 +54,7 @@ class _SplashscreenState extends State<Splashscreen> {
                     speed: const Duration(milliseconds: 120),
                     cursor: "!"),
                 TypewriterAnimatedText(
-                  'Doctor Appointment System!',
+                  'A Medical Service System!',
                   textAlign: TextAlign.center,
                   curve: Curves.ease,
                   textStyle: const TextStyle(

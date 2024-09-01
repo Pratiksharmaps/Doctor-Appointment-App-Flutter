@@ -99,7 +99,7 @@ class _SpecialistscreenState extends State<Specialistscreen> {
                                         ),
                                       ],
                                     ),
-                                    Row(
+                                const   Row(
                                       children: [
                                         Icon(
                                           Icons.star,
